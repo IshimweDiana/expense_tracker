@@ -12,12 +12,44 @@ A beautiful Flutter application for managing personal expenses, tracking savings
 - 📱 User Authentication
 - 📄 PDF Report Generation
 - 💾 Data Persistence
+  ### Financial Management
+- Real-time expense tracking with categories
+- Smart budget planning and monitoring
+- Customizable savings goals
+- Detailed transaction history
+
+### Analytics & Insights
+- Interactive pie charts for expense distribution
+- Monthly spending trends
+- Category-wise analysis
+- Budget utilization metrics
+
+### Security & Data
+- Secure user authentication
+- Local data persistence
+- Offline functionality
+- Data backup support
+
+### Reports & Export
+- Professional PDF report generation
+- Customizable date ranges
+- Category-wise summaries
+- Exportable transaction history
+
+### 🛠️ Technical Stack
+- Flutter Framework
+- SQLite Database
+- Provider State Management
+- Custom UI Components
 
 ## Screenshots
-![Login Screen](/screenshots/login.png)
-![Home Screen](/screenshots/home.png)
-![Analytics](/screenshots/analytics.png)
-![Reports](/screenshots/reports.png)
+![Login Screen](https://github.com/IshimweDiana/expense_tracker/blob/776059602c91c0e4fb62ee8f4ef8d131e007ad02/login.PNG)
+![Home Screen](https://github.com/IshimweDiana/expense_tracker/blob/776059602c91c0e4fb62ee8f4ef8d131e007ad02/expense.PNG)
+![Analytics](https://github.com/IshimweDiana/expense_tracker/blob/776059602c91c0e4fb62ee8f4ef8d131e007ad02/report.PNG)
+![Reports](https://github.com/IshimweDiana/expense_tracker/blob/776059602c91c0e4fb62ee8f4ef8d131e007ad02/exportReport.PNG)
+![Presentation](https://github.com/IshimweDiana/expense_tracker/blob/776059602c91c0e4fb62ee8f4ef8d131e007ad02/Expense_Tracker.pdf)
+
+
 
 ## Installation
 1. Clone the repository
