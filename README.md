@@ -4,6 +4,7 @@ NAME: HABIMANA ISHIMWE DIANE ID:25408
 # Smart Expense Tracker
 
 A beautiful Flutter application for managing personal expenses, tracking savings goals, and generating financial reports.
+I used VSCODE with flutter extension for the development . I run the application on windows as the enumeraters where having issues.
 
 ## Features
 - 💰 Expense Tracking
