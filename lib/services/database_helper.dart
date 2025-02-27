@@ -27,12 +27,9 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, filePath);
 
-    // Delete existing database to recreate with new schema
-    
-
     return await openDatabase(
       path,
-      version: 2, // Increased version number
+      version: _databaseVersion,
       onCreate: _createDB,
     );
   }
@@ -281,5 +278,23 @@ class DatabaseHelper {
       orderBy: 'date DESC',
       limit: limit,
     );
+  }
+
+  Future<void> ensureDatabaseExists() async {
+    final dbPath = await getDatabasesPath();
+    final path = join(dbPath, _databaseName);
+
+    // Check if database exists
+    bool exists = await databaseExists(path);
+
+    if (!exists) {
+      // Create database if it doesn't exist
+      final database = await openDatabase(
+        path,
+        version: _databaseVersion,
+        onCreate: _createDB,
+      );
+      _database = database;
+    }
   }
 }

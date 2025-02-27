@@ -30,7 +30,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_local_notifications: ^15.1.0+1  
+  flutter_local_notifications: ^13.0.0
+  flutter_local_notifications_linux: ^3.0.0
+  flutter_local_notifications_platform_interface: ^6.0.0
   shared_preferences: ^2.2.2
   sqflite: ^2.4.2
   path: ^1.8.3

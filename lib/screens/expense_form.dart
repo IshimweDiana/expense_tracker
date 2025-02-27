@@ -37,9 +37,9 @@ class _ExpenseFormState extends State<ExpenseForm> {
 
     try {
       await _dbHelper.insertExpense(expense);
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('Expense added successfully')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Expense added successfully')),
+      );
       _amountController.clear();
       _categoryController.clear();
       _descriptionController.clear();

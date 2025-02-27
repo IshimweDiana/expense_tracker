@@ -7,6 +7,7 @@ import 'screens/signup_screen.dart';
 import 'screens/home_screen.dart';
 import 'providers/expense_provider.dart';
 import 'utils/performance_optimizer.dart';
+import 'services/database_helper.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,6 +15,9 @@ Future<void> main() async {
   sqfliteFfiInit();
   databaseFactory = databaseFactoryFfi;
   PerformanceOptimizer.enableHighPerformanceMode();
+
+  // Initialize database
+  await DatabaseHelper.instance.ensureDatabaseExists();
 
   final prefs = await SharedPreferences.getInstance();
   final userId = prefs.getInt('userId');
